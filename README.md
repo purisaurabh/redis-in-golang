@@ -1,3 +1,5 @@
+Link To Install : https://betterstack.com/community/guides/scaling-go/redis-caching-golang/
+
 # Using Redis in Go
 
 This repo contains various examples of using Redis in Go. You'll learn how to
@@ -9,34 +11,13 @@ perform the following actions:
 - Update a cached value.
 - Delete a cached value.
 
-**Tutorial**:
-[Redis Caching in Go: A Beginner's Guide](https://betterstack.com/community/guides/scaling-go/redis-in-go/).
+# Check in terminal
 
-## 🟢 Prerequisites
-
-- [A recent version of Go](https://go.dev/doc/install). All examples were tested
-  with Go v1.21.
-- [A recent version of Redis](https://redis.io/docs/getting-started/installation/).
-
-## 📦 Getting started
-
-- Clone this repository to your computer and `cd` into it:
-
-```bash
-git clone https://github.com/betterstack-community/go-redis.git
-cd go-redis/
-```
-
-- Install the required dependencies:
-
-```bash
-go mod download
-```
-
-- Follow along with the
-  [tutorial](https://betterstack.com/community/guides/scaling-go/redis-in-go/).
-
-## ⚖ License
-
-The code used in this project and in the linked tutorial are licensed under the
-[Apache License, Version 2.0](LICENSE).
+1. go to redis terminal using : redis-cli
+2. If Redis is running on a remote server, specify the host and port: redis-cli -h <host> -p <port>
+3. Set Key-Value Pair using : SET mykey "value"
+4. Get value using key : GET key
+5. List All Keys : KEYS\*
+6. Delete Kye : DELETE key
+7. Check if key exists : EXISTS key
+8. If Redis is configured with a password, you'll need to authenticate after connecting. You can do this with: AUTH "password"
